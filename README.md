@@ -48,10 +48,10 @@ About 14% of recipes fall in an ambiguous probability band (0.3–0.7) — their
 │   ├── IPA.csv
 │   ├── IPA_test.csv
 │   └── IPA_description.txt
-├── notebooks/
+├── notebook/
 │   └── The_great_group_IPA_code.ipynb
-├── predictions/
-│   └── The_great_group_IPA_predictions.csv
+├── prediction/
+│   └── IPA_predictions.csv
 ├── requirements.txt
 └── README.md
 ```
