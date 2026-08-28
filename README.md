@@ -6,6 +6,23 @@ A binary classification model predicting whether a given beer recipe is an IPA (
 
 A classification task built on homebrewing recipe data — the goal was to build a model with the highest possible F1-score on an imbalanced and partially noisy dataset.
 
+## Data
+
+~37,000 craft beer recipes from Brewer's Friend, with the following fields:
+
+| Column | Description |
+|---|---|
+| `IsIPA` | Target — is the beer an IPA? |
+| `OG` | Specific gravity of wort before fermentation |
+| `FG` | Specific gravity of wort after fermentation |
+| `ABV` | Alcohol By Volume |
+| `IBU` | International Bittering Units |
+| `Color` | Standard Reference Method (light to dark, e.g. 40 = black) |
+| `BoilGravity` | Specific gravity of wort before the boil |
+| `PitchRate` | Yeast pitched per gravity unit (M cells/ml/°P) |
+| `Efficiency` | Mash extraction efficiency |
+| `UserId` | Brewer's Friend user ID who shared the recipe (dropped — not predictive) |
+
 ## Methodology
 
 1. **Column audit** — dropped only `UserId` (identifier, no predictive value)
